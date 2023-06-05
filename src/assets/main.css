@@ -1,0 +1,58 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    background-color: var(--color-background-soft);
+  }
+
+  #app {
+    background-color: var(--color-background);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+    padding: 1rem;
+    line-height: 1.5;
+    align-items: center;
+    flex-direction: column;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-color: #9ca3af;
+
+    @media (min-width: 1024px) {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      border-top-width: 1px;
+      border-left-width: 0;
+      border-color: #9ca3af;
+    }
+  }
+}
