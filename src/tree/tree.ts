@@ -42,6 +42,5 @@ export function printTree<T>(root: TreeNode<T> | null) {
     return
   }
   printTree(root.left)
-  console.log(root.val + ' ')
   printTree(root.right)
 }
